@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MG&C</title>
+	<link rel="stylesheet" type="text/css" href="MG&C.css">
+	<link rel="icon" type="image/icon" href="AEF.ICO">
+	<link rel="stylesheet" type="text/javascript" href="MG&C.js">
+</head>
+<body>
+	
+
+	<div class="start">
+		<h1>
+			<div><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>	
+		  	THE MUSIC GAMING AND CINEMATICS UNIVERSE <button class="top1">Gameworld</button> <button class="top2">Universe</button>
+		</h1>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>	
+			<a href="#">Games</a>
+			<a href="#">Music</a>
+			<a href="#">Movies</a>
+			<a href="#">Updates</a>
+		</div>
+	</div>
+
+	<div class="all">
+
+		<div class="classone">
+			<h2> Gamers are makers, Music food of the soul and Cinematics is our world </h2>
+			<p>Connect to all the hundreds of thousands of gamers and viewers around the globe to play with, watch with and compete against</p> 
+		</div>
+
+		<div class="form-inline">
+		<form>
+			<label for="firstname">Firstname:</label><input id="firstname" type="firstname" name="firstname" placeholder="enter firstname*">
+			<label for="lastname">Lastname:</label><input id="lastname" type="lastname" name="lastname" placeholder="enter lastname*">
+			<label for="email">Email:</label><input id="email" type="email" name="email" placeholder="enter email*">
+			<label for="mobile">Mobile(Optional):</label><input id="mobile" type="number" name="mobile" placeholder="enter number">
+			<label><input type="checkbox" name="remember">Remember me</label>
+			<button type="register">Register</button>
+			<p class="small">By providing your phone number, you <br> are joining a recurring text messaging <br> program for MG&C.</p>	
+		</form>
+		</div>
+
+	</div>
+
+	<div class="color"><h2>Services</h2></div>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+  			<div class="numbertext">1 / 8</div>
+  			<img src="slides/bloodborne.jpg" style="width:100%">
+  			<div class="text">Play Bloodborne</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">2 / 8</div>
+  			<img src="slides/cod.jpg" style="width: 100%">
+  			<div class="text">Grand Battle Royal</div>
+		</div>
+
+		<div class="mySlides fade">
+  			<div class="numbertext">3 / 8</div>
+  			<img src="slides/nioh.jpg" style="width: 100%">
+  			<div class="text">Sumrai Life</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 8</div>
+			<img src="slides/mando.jpg" style="width: 100%">
+			<div class="text">The Mandalorian</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 8</div>
+			<img src="slides/pubg.jpg" style="width: 100%">
+			<div class="text">Civil War</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 8</div>
+			<img src="slides/superman.jpg" style="width: 100%">
+			<div class="text">Kryptonian</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">7 / 8</div>
+			<img src="slides/speed.jpg" style="width: 100%">
+			<div class="text">Race Friends</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">8 / 8</div>
+			<img src="slides/symbiosis.jpg" style="width: 100%">
+			<div class="text">Fresh Out</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">PREV</a>
+		<a class="next" onclick="plusSlides(1)">NEXT</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+		<span class="dot" onclick="currentSlide(7)"></span> 
+		<span class="dot" onclick="currentSlide(8)"></span> 
+	</div><br>
+
+
+
+	<div class="video">
+		<h3>Teaser</h3> 
+		<video src="back/wed.mp4"></a></video>
+		<div><a href="#">Watch on Youtube</a></div>
+	</div>
+
+
+	<div class="last">
+	<h3>Contact Us</h3>
+	<p class="size">Music Games & Cinematics Universe</p>
+	<p class="size">Music@MG&C</p> 
+	<p class="size">Games@MG&C</p> 
+	<p class="size">Cinematics@MG&C</p>  
+	</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+// ............
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</body>
+</html>

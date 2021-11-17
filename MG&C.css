@@ -1,0 +1,337 @@
+
+* {
+	box-sizing: border-box;
+}
+
+/*@media (max-width: 600px) {
+	.start, .all, .form-inline, .classone{
+		width: 100%;
+		height: auto;
+	}
+
+}
+*/
+@media only screen and (max-width:800px) {
+	/*for tablets*/
+	.start, .class1 {
+		width: 100%;
+	} 
+}
+
+@media only screen and (max-width: 500px) {
+	/*for mobile phones*/
+	.start, .class1{
+		width: 100%;
+	}
+}
+
+body{  font-family: Verdana,
+	margin:auto;
+	background-color: #dddddd;
+}
+
+
+h1{
+	text-align: center;
+	color:#e5245b;
+	margin: auto;
+	margin-left: 19%;
+	margin-right: -8%;
+}
+h1 button{
+	background-color: white;
+	padding: 10px 20px;
+	text-align: center;
+	transition-duration: 0.4s;
+	color: black;	
+	border: 1px solid #e5245b; 
+	margin: auto;
+}
+
+.top1{
+	float: right;
+} 
+.top2{
+	background-color: #e5245b;
+	float: right;
+	margin-right: 20px;
+	color: white;
+}
+
+.top1:hover {
+	background-color:#e5245b;
+	color: white; 
+}
+ .top2:hover {
+ 	border-top-color: transparent; transition-duration: 0.5s; 
+ 	border-left-color: transparent; 
+ 	background-color: transparent;
+ 	color: black;
+ }
+
+ .start{
+ 	position: fixed;
+ }
+ .start .top1{
+ 	margin-right: -30%;
+ }
+ .start .top2{
+ 	margin-right: -16%;
+ }
+
+ span{
+ 	float: left;
+	margin-left: -20%;
+ 	color: #e5245b;
+ }
+
+.sidenav{
+	height: 50%;
+  	width: 0;
+ 	position: fixed;
+ 	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: white;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+  	/*background-image: url('back/bg1.jpg');*/
+
+}
+
+.sidenav a {
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+  	font-size: 25px;
+  	color: #818181;
+ 	display: block;
+  	transition: 0.3s;
+}
+
+.sidenav:hover {
+	border: 2px solid #e5245b; 
+}
+
+.sidenav a:hover {
+  	color:  #e5245b;	#f1f1f1;
+}
+
+.sidenav .closebtn {
+  	position: absolute;
+  	top: 0;
+  	right: 25px;
+  	font-size: 36px;
+  	margin-left: 50px;
+}
+
+.all{
+	background-image: url("back/bg1.jpg"); 
+	margin-top:-10px; padding-bottom: 10%; padding-top: 50px; 
+	padding-left: 6px; margin-left: -8px;
+	padding-right:; margin-right: -8px;   
+	background-size: 100% 100%; 
+	background-attachment: all; 
+	color: white;
+}
+
+h2{
+	font-size: 40px;
+	font-family:;
+	text-align: center;
+
+}
+
+p{ 
+	font-size: 30px;
+}
+.color{
+	color: #e5245b;
+}
+/*styling the form-displaying horizontally*/
+
+.form-inline{
+	display: flex;
+	flex-flow: row-wrap;
+	align-items: center;
+	color: white;
+
+}
+.small{
+	font-size: 9px;
+	color: white;
+	text-align: left;
+	margin-left: 68.8%;
+
+}
+
+/*adding some margins for each label*/
+.form-inline label {
+	  margin: 5px 10px 5px 0;
+} 
+
+/*input fields style*/
+.form-inline input {
+	vertical-align: middle;
+	margin: 5px 10px 5px 0;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #e5245b;
+}
+
+.form-inline button{
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 1px solid #e5245b;
+	color: black;
+	cursor: pointer;
+}
+
+.form-inline button:hover{
+	background-color: #e5245b;
+	color: white;
+}
+
+
+/*..............................................................*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; 
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:  #e5245b;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: white;rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:  #e5245b;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-left: 9.7%
+
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+h3{
+	text-align: center;
+	font-size: 40px;
+	color: #e5245b;
+}
+
+video{
+	max-width: 1200px;
+	margin-left: 75px;
+	position: relative;
+
+
+}
+.video{
+	/*background-image: url('back/secondbg.jpg');*/
+	background-color: white;
+	margin-left: -8px;
+	margin-right: -8px;
+	padding-bottom: 5%;
+}
+.video a {
+	color: black;
+	text-decoration-line: none;
+	margin-left: 5.5%;
+}
+
+.last{
+	background-color: #e5245b; 
+	margin-right: -8px;
+	margin-left: -8px;
+	margin-top: -40px;
+	padding-bottom: 20px;
+}
+.last h3{
+	text-align: center;
+	color: white;
+
+}
+.size{
+	font-size: 20px;
+	color: white;
+}
